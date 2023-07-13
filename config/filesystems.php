@@ -56,6 +56,14 @@ return [
             'throw' => false,
         ],
 
+        // Disk untuk menyimpan gambar
+        'uploads' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public/uploads'), // Direktori penyimpanan gambar
+            'url' => env('APP_URL') . '/storage/uploads', // URL publik untuk gambar
+            'visibility' => 'public',
+        ],
+
     ],
 
     /*
